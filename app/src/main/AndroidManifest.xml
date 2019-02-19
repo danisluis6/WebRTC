@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="androidwidgets.tutorial.com.webrtcmobile">
+    package="com.com.tutorial.webrtc">
 
     <application
         android:allowBackup="true"
@@ -11,7 +11,7 @@
         android:theme="@style/AppTheme">
 
         <activity
-            android:name=".WebRTCActivity"
+            android:name="com.com.tutorial.webrtc.androidwidgets.com.tutorial.webrtc.WebRTCActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/app_name"
             android:theme="@style/FullscreenTheme">
