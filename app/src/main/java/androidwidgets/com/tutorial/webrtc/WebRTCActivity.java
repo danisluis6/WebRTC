@@ -23,7 +23,6 @@ import org.webrtc.AudioSource;
 import org.webrtc.AudioTrack;
 import org.webrtc.Camera1Enumerator;
 import org.webrtc.CameraEnumerator;
-import org.webrtc.CameraVideoCapturer;
 import org.webrtc.DefaultVideoDecoderFactory;
 import org.webrtc.DefaultVideoEncoderFactory;
 import org.webrtc.EglBase;
@@ -36,7 +35,6 @@ import org.webrtc.PeerConnectionFactory;
 import org.webrtc.SessionDescription;
 import org.webrtc.SurfaceViewRenderer;
 import org.webrtc.VideoCapturer;
-import org.webrtc.VideoRenderer;
 import org.webrtc.VideoSource;
 import org.webrtc.VideoTrack;
 
@@ -84,6 +82,14 @@ public class WebRTCActivity extends AppCompatActivity implements View.OnClickLis
 
     boolean gotUserMedia;
     List<PeerConnection.IceServer> peerIceServers = new ArrayList<>();
+
+    /**
+     * References link
+     * https://www.pubnub.com/blog/2014-10-21-building-a-webrtc-video-and-voice-chat-application/
+     * https://webrtc.github.io/samples/
+     * https://vivekc.xyz/getting-started-with-webrtc-for-android-daab1e268ff4
+     * https://github.com/vivek1794/webrtc-android-codelab/tree/master/Step-3
+     */
 
     private final Runnable mShowPart2Runnable = () -> {
         ActionBar actionBar = getSupportActionBar();
