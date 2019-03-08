@@ -495,9 +495,6 @@ public class WebRTCActivity extends AppCompatActivity implements View.OnClickLis
         super.onDestroy();
     }
 
-    /**
-     * Util Methods
-     */
     public int dpToPx(int dp) {
         DisplayMetrics displayMetrics = getResources().getDisplayMetrics();
         return Math.round(dp * (displayMetrics.xdpi / DisplayMetrics.DENSITY_DEFAULT));
